@@ -8,8 +8,8 @@ and copy this line at the end of the file and save it (WARNING:modify it with th
 
 */30 * * * * php /var/www/html/modules/reseller/cron-shop.php
 
-Now this script searches for expired game homes every 30 minutes, and wil stop and remove them if they are expired.
-If you would like to do this at midnight every day instead of every minute you should use
+Now this script searches for expired game homes every 30 minutes, and will stop and remove them if they are expired.
+If you would like to do this at midnight every day instead of every 30 minutes you should use
 
 0 0 * * * php /var/www/html/modules/reseller/cron-shop.php
 
