@@ -1,35 +1,3 @@
-<style>
-form table.center tr td{
-	width:50%;
-	width:50%;
-}
-
-table.center{
-	color:#333333;
-	clear:both;
-	width:100%;
-	height:35px;
-	margin-top:-6px;
-	padding-top:10px;
-	text-align: center;
-	color:#FFFF;
-}
-
-table.center tr td{
-	border:1px solid #cfcfcf;
-	background:#e5e5e5;
-}
-
-table.center th{
-	border:1px solid #cfcfcf;
-	background:#c5c5c5;
-}
-
-table.center tr.first_row td{
-	border:1px solid #cfcfcf;
-	background:#c5c5c5;
-}
-</style>
 <?php
 /*
  *
@@ -242,25 +210,7 @@ function exec_ogp_module()
 		$view->refresh('home.php?m=reseller&p=paypal&cart_id='.$_POST["cart_id"], 0);
 	}
 	
-	?>
-	<style>
-	h4 {
-		width:250px;
-		height:25px;
-		background:#f5f5f5;
-		border-top-style:solid;
-		border-top-color:#afafaf;
-		border-top-width:1px;
-		border-style: solid;
-		border-color: #CFCFCF;
-		border-width: 1px;
-		padding-top:8px;
-		text-align: center;
-		font-family:"Trebuchet MS";
-	}
-	</style>
-	<h2><?php print_lang("your_cart");?></h2>
-	<?php
+	?><h2><?php print_lang("your_cart");?></h2><?php
 	if( isset($_SESSION['CART']) and !empty($_SESSION['CART']) )
 	{
 		$carts[0] = $_SESSION['CART'];
